@@ -36,13 +36,13 @@ if (!defined('PHPEXCEL_ROOT')) {
 }
 
 /**
- * IOFactory
+ * PHPExcel_IOFactory
  *
  * @category   PHPExcel
  * @package    PHPExcel
  * @copyright  Copyright (c) 2006 - 2014 PHPExcel (http://www.codeplex.com/PHPExcel)
  */
-class IOFactory
+class PHPExcel_IOFactory
 {
 	/**
 	 * Search locations

@@ -22,9 +22,8 @@ class Welcome extends CI_Controller {
 		$this->load->view('welcome_message');
 
 		$this->load->library('Excel');
-		$this->load->library('Excel/iofactory');
 
-		$objPHPExcel = new PHPExcel();
+		$objPHPExcel = new Excel();
 		$objPHPExcel->getProperties()->setTitle("title")
 		                 ->setDescription("description");
 
@@ -33,7 +32,7 @@ class Welcome extends CI_Controller {
 		$objPHPExcel->getActiveSheet()->setCellValue('A1', 'cell value here');
 
 		// Save it as an excel 2003 file
-		$objWriter = IOFactory::createWriter($objPHPExcel, 'Excel5');
+		$objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
 		$objWriter->save("nameoffile.xls");
 	}
 }
