@@ -1,0 +1,34 @@
+body {
+    background-color: white;
+    font-family: "宋体";
+}
+table {
+    background-color: white;
+    margin: auto 0;
+    color: black;
+    border-top: none;
+    width: 90%
+}
+td{
+	text-align: center;
+}
+p{
+	margin: 0;
+	padding: 4px 0;
+}
+
+#school{
+	width: 90%;
+	text-align: right;
+	color: black;
+	height: 1cm;
+}
+.w3cbbs {
+    page-break-after: always;
+    height: 100%;
+    padding: 1cm 0;
+}
+@page: pseudo-class {
+    size: A4 landscape;
+    margin: 2cm 4cm;
+}
