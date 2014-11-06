@@ -47,7 +47,7 @@
                         </p>
                     </td>
                     <td width="143" colspan="2">
-                        <p align="center">
+                        <p align="center" style="font-size:12px">
                             <?=$s[3]?>
                         </p>
                     </td>
@@ -164,13 +164,13 @@
                         </p>
                     </td>
                     <td width="62">
+                        <?=bmi($s[9], $s[10])?>
                     </td>
                     <td width="62" colspan="3">
                     </td>
                     <td width="62" colspan="2">
                     </td>
                     <td width="62">
-
                     </td>
                     <td width="62" colspan="3">
                     </td>
