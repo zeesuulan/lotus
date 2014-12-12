@@ -167,8 +167,10 @@
                         <?=bmi($s[9], $s[10])?>
                     </td>
                     <td width="62" colspan="3">
+                        <?=$s[11]?>
                     </td>
                     <td width="62" colspan="2">
+                        <?=$s[12]?>
                     </td>
                     <td width="62">
                     </td>
@@ -191,11 +193,13 @@
                         </p>
                     </td>
                     <td width="62">
-                        <?=$s[11]?>
+                        <?=$s[13]?>
                     </td>
                     <td width="62" colspan="3">
+                        <?=$s[14]?>
                     </td>
                     <td width="62" colspan="2">
+                        <?=$s[15]?>
                     </td>
                     <td width="62">
                     </td>
@@ -214,11 +218,13 @@
                         </p>
                     </td>
                     <td width="62">
-                        <?=$s[12]?>
+                        <?=$s[16]?>
                     </td>
                     <td width="62" colspan="3">
+                        <?=$s[17]?>
                     </td>
                     <td width="62" colspan="2">
+                        <?=$s[18]?>
                     </td>
                     <td width="62">
                     </td>
@@ -237,11 +243,13 @@
                         </p>
                     </td>
                     <td width="62">
-                        <?=$s[13]?>
+                        <?=$s[19]?>
                     </td>
                     <td width="62" colspan="3">
+                        <?=$s[20]?>
                     </td>
                     <td width="62" colspan="2">
+                        <?=$s[21]?>
                     </td>
                     <td width="62">
 
@@ -261,12 +269,13 @@
                         </p>
                     </td>
                     <td width="62">
-                        <?=$s[14]?>
-
+                        <?=$s[29]?>
                     </td>
                     <td width="62" colspan="3">
+                        <?=$s[30]?>
                     </td>
                     <td width="62" colspan="2">
+                        <?=$s[31]?>
                     </td>
                     <td width="62">
                     </td>
@@ -285,12 +294,13 @@
                         </p>
                     </td>
                     <td width="62">
-                        <?=$s[15]?>
-
+                        <?=$s[25]?>
                     </td>
                     <td width="62" colspan="3">
+                        <?=$s[26]?>
                     </td>
                     <td width="62" colspan="2">
+                        <?=$s[27]?>
                     </td>
                     <td width="62">
                     </td>
@@ -309,12 +319,13 @@
                         </p>
                     </td>
                     <td width="62">
-                        <?=$s[16]?>
-
+                        <?=$s[22]?>
                     </td>
                     <td width="62" colspan="3">
+                        <?=$s[23]?>
                     </td>
                     <td width="62" colspan="2">
+                        <?=$s[24]?>
                     </td>
                     <td width="62">
                     </td>
@@ -331,7 +342,7 @@
                     </td>
                     <td width="185" colspan="6">
                         <p align="center">
-                            <strong></strong>
+                            <strong><?=$s[33]?></strong>
                         </p>
                     </td>
                     <td width="185" colspan="5">
@@ -393,7 +404,7 @@
                     </td>
                     <td width="185" colspan="6">
                         <p align="center">
-                            <strong></strong>
+                            <strong><?=$s[34]?></strong>
                         </p>
                     </td>
                     <td width="185" colspan="5">
@@ -410,7 +421,7 @@
                     </td>
                     <td width="185" colspan="6">
                         <p align="center">
-                            <strong></strong>
+                            <strong><?=$s[35]?></strong>
                         </p>
                     </td>
                     <td width="185" colspan="5">
@@ -550,10 +561,8 @@
                             <p align="right">
                             </p>
                         </td>
-                        <td width="31">
-                            <p align="right">
-                                年&nbsp;&nbsp;&nbsp;&nbsp;月&nbsp;&nbsp;&nbsp;&nbsp;日
-                            </p>
+                        <td width="60">
+                            <p align="right">2014年11月03日</p>
                         </td>
                         <td width="31">
                             <p align="right">

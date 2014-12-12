@@ -53,13 +53,13 @@ class Upload extends CI_Controller
                 /**取得一共有多少行*/
                 $allRow = $currentSheet->getHighestRow();
                 // $allRow = 3;
-
                 $allObj = [];
                 $obj = [];
+                // for ($currentRow = 2; $currentRow <= 2; $currentRow++) {
                 for ($currentRow = 2; $currentRow <= $allRow; $currentRow++) {
                     /**从第A列开始输出*/
-                    for ($currentColumn = 'A'; $currentColumn <= $allColumn; $currentColumn++) {
-                        $cell = $currentSheet->getCellByColumnAndRow(ord($currentColumn) - 65, $currentRow);
+                    for ($currentColumn = 0; $currentColumn <= 35; $currentColumn++) {
+                        $cell = $currentSheet->getCellByColumnAndRow($currentColumn, $currentRow);
                         $value = $cell->getFormattedValue();
 
                         $obj[] = $value;
