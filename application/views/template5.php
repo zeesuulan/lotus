@@ -9,8 +9,10 @@
 
 <body>
     <?php foreach ($data as $key=>$s) {?>
-
     <div align="center" class="w3cbbs">
+        <h3 align="center">
+            《国家学生体质健康标准》登记卡（小学<strong>5～6</strong>年级）
+        </h3>
         <div id="school">
             学校： <u><?=$school?></u>
         </div>

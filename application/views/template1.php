@@ -3,18 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>56</title>
+    <title>1年级</title>
     <?=setCSS(array( "bootstrap.min.css", "template.css"))?>
 </head>
+
 <body>
     <?php foreach ($data as $key=>$s) {?>
     <div align="center" class="w3cbbs">
-        <p align="center">
-            《国家学生体质健康标准》登记卡（小学<strong>5～6</strong>年级）
-        </p>
+        <h3 align="center">
+            《国家学生体质健康标准》登记卡（小学<strong>1～2</strong>年级样表）
+        </h3>
         <div id="school">
-            学校： <u><?=$school?></u>
-        </div>
+                学校： <u><?=$school?></u>
+            </div>
         <table border="1" cellspacing="0" cellpadding="0">
             <tbody>
                 <tr>
@@ -23,31 +24,31 @@
                             <strong>姓 名</strong>
                         </p>
                     </td>
-                    <td width="146" colspan="3">
+                    <td width="147" colspan="3">
                         <p align="center">
-                            <strong>
+                             <strong>
                                 <?=$s[5]?>
                             </strong>
                         </p>
                     </td>
                     <td width="73" colspan="3">
                         <p align="center">
-                            <strong>性别</strong>
+                            <strong>性 别</strong>
                         </p>
                     </td>
-                    <td width="147" colspan="4">
+                    <td width="147" colspan="2">
                         <p align="center">
                             <strong>
                                 <?=gender($s[6])?>
                             </strong>
                         </p>
                     </td>
-                    <td width="76" colspan="2">
+                    <td width="73" colspan="2">
                         <p align="center">
-                            <strong>学号</strong>
+                            <strong>学 号</strong>
                         </p>
                     </td>
-                    <td width="143" colspan="2">
+                    <td width="147" colspan="4">
                         <p align="center" style="font-size:12px">
                             <?=$s[3]?>
                         </p>
@@ -59,7 +60,7 @@
                             <strong>班 级</strong>
                         </p>
                     </td>
-                    <td width="146" colspan="3">
+                    <td width="147" colspan="3">
                         <p align="center">
                             <strong>
                                 <?=$s[2]?>
@@ -68,22 +69,22 @@
                     </td>
                     <td width="73" colspan="3">
                         <p align="center">
-                            <strong>民族</strong>
+                            <strong>民 族</strong>
                         </p>
                     </td>
-                    <td width="147" colspan="4">
+                    <td width="147" colspan="2">
                         <p align="center">
                             <strong>
                                 <?=race($s[4])?>
                             </strong>
                         </p>
                     </td>
-                    <td width="76" colspan="2">
+                    <td width="73" colspan="2">
                         <p align="center">
                             <strong>出生日期</strong>
                         </p>
                     </td>
-                    <td width="143" colspan="2">
+                    <td width="147" colspan="4">
                         <p align="center">
                             <strong>
                                 <?=birthday($s[7])?>
@@ -92,71 +93,61 @@
                     </td>
                 </tr>
                 <tr>
-                    <td width="146" colspan="2" rowspan="2">
+                    <td width="132" colspan="2" rowspan="2">
                         <p align="center">
                             <strong>单项指标</strong>
                         </p>
                     </td>
-                    <td width="185" colspan="6">
+                    <td width="198" colspan="6">
                         <p align="center">
-                            <strong>五年级</strong>
+                            <strong>一年级</strong>
                         </p>
                     </td>
-                    <td width="185" colspan="5">
+                    <td width="132" colspan="2" rowspan="2">
                         <p align="center">
-                            <strong>六年级</strong>
+                            <strong>单项指标</strong>
                         </p>
                     </td>
-                    <td width="143" colspan="2">
+                    <td width="198" colspan="5">
                         <p align="center">
-                            <strong>毕业成绩</strong>
+                            <strong>二年级</strong>
                         </p>
                     </td>
                 </tr>
                 <tr>
-                    <td width="62">
+                    <td width="66">
                         <p align="center">
                             <strong>成绩</strong>
                         </p>
                     </td>
-                    <td width="62" colspan="3">
+                    <td width="66" colspan="3">
                         <p align="center">
                             <strong>得分</strong>
                         </p>
                     </td>
-                    <td width="62" colspan="2">
+                    <td width="66" colspan="2">
                         <p align="center">
                             <strong>等级</strong>
                         </p>
                     </td>
-                    <td width="62">
+                    <td width="66" colspan="2">
                         <p align="center">
                             <strong>成绩</strong>
                         </p>
                     </td>
-                    <td width="62" colspan="3">
+                    <td width="66" colspan="2">
                         <p align="center">
                             <strong>得分</strong>
                         </p>
                     </td>
-                    <td width="62">
-                        <p align="center">
-                            <strong>等级</strong>
-                        </p>
-                    </td>
-                    <td width="72">
-                        <p align="center">
-                            <strong>得分</strong>
-                        </p>
-                    </td>
-                    <td width="72">
+                    <td width="66">
                         <p align="center">
                             <strong>等级</strong>
                         </p>
                     </td>
                 </tr>
                 <tr>
-                    <td width="146" colspan="2">
+                    <td width="132" colspan="2">
                         <p align="center">
                             体重指数（BMI）
                         </p>
@@ -164,28 +155,32 @@
                             （单位：千克/米<sup>2</sup>）
                         </p>
                     </td>
-                    <td width="62">
-                    </td>
-                    <td width="62" colspan="3">
-                    </td>
-                    <td width="62" colspan="2">
-                    </td>
-                    <td width="62">
+                    <td width="66">
                         <?=bmi($s[9], $s[10])?>
                     </td>
-                    <td width="62" colspan="3">
+                    <td width="66" colspan="3">
                         <?=$s[11]?>
                     </td>
-                    <td width="62">
+                    <td width="66" colspan="2">
                         <?=$s[12]?>
                     </td>
-                    <td width="72" rowspan="12">
+                    <td width="132" colspan="2">
+                        <p align="center">
+                            体重指数（BMI）
+                        </p>
+                        <p align="center">
+                            （单位：千克/米<sup>2</sup>）
+                        </p>
                     </td>
-                    <td width="72" rowspan="12">
+                    <td width="66" colspan="2">
+                    </td>
+                    <td width="66" colspan="2">
+                    </td>
+                    <td width="66">
                     </td>
                 </tr>
                 <tr>
-                    <td width="146" colspan="2">
+                    <td width="132" colspan="2">
                         <p align="center">
                             肺活量
                         </p>
@@ -193,24 +188,32 @@
                             （单位：毫升）
                         </p>
                     </td>
-                    <td width="62">
-                    </td>
-                    <td width="62" colspan="3">
-                    </td>
-                    <td width="62" colspan="2">
-                    </td>
-                    <td width="62">
+                    <td width="66">
                         <?=$s[13]?>
                     </td>
-                    <td width="62" colspan="3">
+                    <td width="66" colspan="3">
                         <?=$s[14]?>
                     </td>
-                    <td width="62">
+                    <td width="66" colspan="2">
                         <?=$s[15]?>
+                    </td>
+                    <td width="132" colspan="2">
+                        <p align="center">
+                            肺活量
+                        </p>
+                        <p align="center">
+                            （单位：毫升）
+                        </p>
+                    </td>
+                    <td width="66" colspan="2">
+                    </td>
+                    <td width="66" colspan="2">
+                    </td>
+                    <td width="66">
                     </td>
                 </tr>
                 <tr>
-                    <td width="146" colspan="2">
+                    <td width="132" colspan="2">
                         <p align="center">
                             50米跑
                         </p>
@@ -218,24 +221,32 @@
                             （单位：秒）
                         </p>
                     </td>
-                    <td width="62">
-                    </td>
-                    <td width="62" colspan="3">
-                    </td>
-                    <td width="62" colspan="2">
-                    </td>
-                    <td width="62">
+                    <td width="66">
                         <?=$s[16]?>
                     </td>
-                    <td width="62" colspan="3">
+                    <td width="66" colspan="3">
                         <?=$s[17]?>
                     </td>
-                    <td width="62">
+                    <td width="66" colspan="2">
                         <?=$s[18]?>
+                    </td>
+                    <td width="132" colspan="2">
+                        <p align="center">
+                            50米跑
+                        </p>
+                        <p align="center">
+                            （单位：秒）
+                        </p>
+                    </td>
+                    <td width="66" colspan="2">
+                    </td>
+                    <td width="66" colspan="2">
+                    </td>
+                    <td width="66">
                     </td>
                 </tr>
                 <tr>
-                    <td width="146" colspan="2">
+                    <td width="132" colspan="2">
                         <p align="center">
                             坐位体前屈
                         </p>
@@ -243,24 +254,32 @@
                             （单位：厘米）
                         </p>
                     </td>
-                    <td width="62">
-                    </td>
-                    <td width="62" colspan="3">
-                    </td>
-                    <td width="62" colspan="2">
-                    </td>
-                    <td width="62">
+                    <td width="66">
                         <?=$s[19]?>
                     </td>
-                    <td width="62" colspan="3">
+                    <td width="66" colspan="3">
                         <?=$s[20]?>
                     </td>
-                    <td width="62">
+                    <td width="66" colspan="2">
                         <?=$s[21]?>
+                    </td>
+                    <td width="132" colspan="2">
+                        <p align="center">
+                            坐位体前屈
+                        </p>
+                        <p align="center">
+                            （单位：厘米）
+                        </p>
+                    </td>
+                    <td width="66" colspan="2">
+                    </td>
+                    <td width="66" colspan="2">
+                    </td>
+                    <td width="66">
                     </td>
                 </tr>
                 <tr>
-                    <td width="146" colspan="2">
+                    <td width="132" colspan="2">
                         <p align="center">
                             1分钟跳绳
                         </p>
@@ -268,118 +287,86 @@
                             （单位：次）
                         </p>
                     </td>
-                    <td width="62">
+                    <td width="66">
+                        <?=$s[22]?>
                     </td>
-                    <td width="62" colspan="3">
+                    <td width="66" colspan="3">
+                        <?=$s[23]?>
                     </td>
-                    <td width="62" colspan="2">
+                    <td width="66" colspan="2">
+                        <?=$s[24]?>
                     </td>
-                    <td width="62">
-                        <?=$s[29]?>
-                    </td>
-                    <td width="62" colspan="3">
-                        <?=$s[30]?>
-                    </td>
-                    <td width="62">
-                        <?=$s[31]?>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="146" colspan="2">
+                    <td width="132" colspan="2">
                         <p align="center">
-                            1分钟仰卧起坐
+                            1分钟跳绳
                         </p>
                         <p align="center">
                             （单位：次）
                         </p>
                     </td>
-                    <td width="62">
+                    <td width="66" colspan="2">
                     </td>
-                    <td width="62" colspan="3">
+                    <td width="66" colspan="2">
                     </td>
-                    <td width="62" colspan="2">
-                    </td>
-                    <td width="62">
-                        <?=$s[25]?>
-                    </td>
-                    <td width="62" colspan="3">
-                        <?=$s[26]?>
-                    </td>
-                    <td width="62">
-                        <?=$s[27]?>
+                    <td width="66">
                     </td>
                 </tr>
                 <tr>
-                    <td width="146" colspan="2">
-                        <p align="center">
-                            50米×8往返跑
-                        </p>
-                        <p align="center">
-                            （单位：分·秒）
-                        </p>
-                    </td>
-                    <td width="62">
-                    </td>
-                    <td width="62" colspan="3">
-                    </td>
-                    <td width="62" colspan="2">
-                    </td>
-                    <td width="62">
-                        <?=$s[22]?>
-                    </td>
-                    <td width="62" colspan="3">
-                        <?=$s[23]?>
-                    </td>
-                    <td width="62">
-                        <?=$s[24]?>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="146" colspan="2">
+                    <td width="132" colspan="2">
                         <p align="center">
                             <strong>标准分</strong>
                         </p>
                     </td>
-                    <td width="185" colspan="6">
+                    <td width="198" colspan="6">
+                        <p align="center">
+                            <strong><?=$s[26]?></strong>
+                        </p>
+                    </td>
+                    <td width="132" colspan="2">
+                        <p align="center">
+                            <strong>标准分</strong>
+                        </p>
+                    </td>
+                    <td width="198" colspan="5">
                         <p align="center">
                             <strong></strong>
                         </p>
                     </td>
-                    <td width="185" colspan="5">
-                        <p align="center">
-                            <strong><?=$s[33]?></strong>
-                        </p>
-                    </td>
                 </tr>
                 <tr>
-                    <td width="146" colspan="2">
+                    <td width="132" colspan="2">
                         <p align="center">
                             <strong>加分指标</strong>
                         </p>
                     </td>
-                    <td width="92" colspan="3">
+                    <td width="99" colspan="3">
                         <p align="center">
                             <strong>成绩</strong>
                         </p>
                     </td>
-                    <td width="93" colspan="3">
+                    <td width="99" colspan="3">
                         <p align="center">
                             <strong>附加分</strong>
                         </p>
                     </td>
-                    <td width="92" colspan="2">
+                    <td width="132" colspan="2">
+                        <p align="center">
+                            <strong>加分指标</strong>
+                        </p>
+                    </td>
+                    <td width="99" colspan="3">
                         <p align="center">
                             <strong>成绩</strong>
                         </p>
                     </td>
-                    <td width="93" colspan="3">
+                    <td width="99" colspan="2">
                         <p align="center">
                             <strong>附加分</strong>
                         </p>
                     </td>
                 </tr>
                 <tr>
-                    <td width="146" colspan="2">
+                    <td width="132" colspan="2">
                         <p align="center">
                             1分钟跳绳
                         </p>
@@ -387,113 +374,135 @@
                             （单位：次）
                         </p>
                     </td>
-                    <td width="92" colspan="3">
+                    <td width="99" colspan="3">
                     </td>
-                    <td width="93" colspan="3">
+                    <td width="99" colspan="3">
                     </td>
-                    <td width="92" colspan="2">
+                    <td width="132" colspan="2">
+                        <p align="center">
+                            1分钟跳绳
+                        </p>
+                        <p align="center">
+                            （单位：次）
+                        </p>
                     </td>
-                    <td width="93" colspan="3">
+                    <td width="99" colspan="3">
+                        <?=$s[31]?>
+                    </td>
+                    <td width="99" colspan="2">
                     </td>
                 </tr>
                 <tr>
-                    <td width="146" colspan="2">
+                    <td width="132" colspan="2">
                         <p align="center">
                             <strong>学年总分</strong>
                         </p>
                     </td>
-                    <td width="185" colspan="6">
+                    <td width="198" colspan="6">
+                        <p align="center">
+                            <strong><?=$s[27]?></strong>
+                        </p>
+                    </td>
+                    <td width="132" colspan="2">
+                        <p align="center">
+                            <strong>学年总分</strong>
+                        </p>
+                    </td>
+                    <td width="198" colspan="5">
                         <p align="center">
                             <strong></strong>
                         </p>
                     </td>
-                    <td width="185" colspan="5">
-                        <p align="center">
-                            <strong><?=$s[34]?></strong>
-                        </p>
-                    </td>
                 </tr>
                 <tr>
-                    <td width="146" colspan="2">
+                    <td width="132" colspan="2">
                         <p align="center">
                             <strong>等级评定</strong>
                         </p>
                     </td>
-                    <td width="185" colspan="6">
+                    <td width="198" colspan="6">
+                        <p align="center">
+                            <strong><?=$s[28]?></strong>
+                        </p>
+                    </td>
+                    <td width="132" colspan="2">
+                        <p align="center">
+                            <strong>等级评定</strong>
+                        </p>
+                    </td>
+                    <td width="198" colspan="5">
                         <p align="center">
                             <strong></strong>
                         </p>
                     </td>
-                    <td width="185" colspan="5">
-                        <p align="center">
-                            <strong><?=$s[35]?></strong>
-                        </p>
-                    </td>
                 </tr>
                 <tr>
-                    <td width="146" colspan="2">
+                    <td width="132" colspan="2">
                         <p align="center">
                             <strong>体育教师签字</strong>
                             <strong></strong>
                         </p>
                     </td>
-                    <td width="185" colspan="6">
+                    <td width="198" colspan="6">
                         <p align="center">
                             <strong></strong>
                         </p>
                     </td>
-                    <td width="185" colspan="5">
+                    <td width="132" colspan="2">
                         <p align="center">
+                            <strong>体育教师签字</strong>
                             <strong></strong>
                         </p>
                     </td>
-                    <td width="143" colspan="2">
+                    <td width="198" colspan="5">
                         <p align="center">
                             <strong></strong>
                         </p>
                     </td>
                 </tr>
                 <tr>
-                    <td width="146" colspan="2">
+                    <td width="132" colspan="2">
                         <p align="center">
                             <strong>班主任签字</strong>
                             <strong></strong>
                         </p>
                     </td>
-                    <td width="185" colspan="6">
+                    <td width="198" colspan="6">
                         <p align="center">
                             <strong></strong>
                         </p>
                     </td>
-                    <td width="185" colspan="5">
+                    <td width="132" colspan="2">
                         <p align="center">
+                            <strong>班主任签字</strong>
                             <strong></strong>
                         </p>
                     </td>
-                    <td width="143" colspan="2">
+                    <td width="198" colspan="5">
                         <p align="center">
                             <strong></strong>
                         </p>
                     </td>
                 </tr>
                 <tr>
-                    <td width="146" colspan="2">
+                    <td width="132" colspan="2">
                         <p align="center">
                             <strong>家长签字</strong>
                             <strong></strong>
                         </p>
                     </td>
-                    <td width="185" colspan="6">
+                    <td width="198" colspan="6">
                         <p align="center">
                             <strong></strong>
                         </p>
                     </td>
-                    <td width="185" colspan="5">
+                    <td width="132" colspan="2">
                         <p align="center">
+                            <strong>家长签字</strong>
                             <strong></strong>
                         </p>
                     </td>
-                    <td width="143" colspan="2">
+                    <td width="198" colspan="5">
                         <p align="center">
                             <strong></strong>
                         </p>
@@ -502,76 +511,77 @@
                 <tr height="0">
                     <td width="73">
                     </td>
-                    <td width="73">
+                    <td width="59">
                     </td>
-                    <td width="62">
+                    <td width="66">
                     </td>
-                    <td width="12">
+                    <td width="22">
                     </td>
-                    <td width="19">
+                    <td width="11">
                     </td>
-                    <td width="31">
+                    <td width="33">
                     </td>
-                    <td width="24">
+                    <td width="29">
                     </td>
-                    <td width="38">
+                    <td width="37">
                     </td>
-                    <td width="62">
+                    <td width="110">
                     </td>
-                    <td width="31">
+                    <td width="22">
                     </td>
-                    <td width="17">
+                    <td width="51">
                     </td>
-                    <td width="14">
+                    <td width="15">
                     </td>
-                    <td width="62">
+                    <td width="33">
                     </td>
-                    <td width="72">
+                    <td width="33">
                     </td>
-                    <td width="72">
+                    <td width="66">
                     </td>
                 </tr>
             </tbody>
         </table>
-        <div align="right" style="margin-top:10px;">
-            <table border="0" cellspacing="0" cellpadding="0">
-                <tbody>
-                    <tr>
-                        <td width="200">
 
-                        </td>
-                        <td width="51">
-                            <p>
-                                学校签章：
-                            </p>
-                        </td>
-                        <td width="31">
-                        </td>
-                        <td width="31">
+    <div align="right" style="margin-top:10px;">
+                <table border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr>
+                            <td width="200">
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td width="200">
-                            <p align="right">
+                            </td>
+                            <td width="51">
+                                <p>
+                                    学校签章：
+                                </p>
+                            </td>
+                            <td width="31">
+                            </td>
+                            <td width="31">
 
-                            </p>
-                        </td>
-                        <td width="31">
-                            <p align="right">
-                            </p>
-                        </td>
-                        <td width="60">
-                            <p align="right">2014年11月03日</p>
-                        </td>
-                        <td width="31">
-                            <p align="right">
-                            </p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="200">
+                                <p align="right">
+
+                                </p>
+                            </td>
+                            <td width="31">
+                                <p align="right">
+                                </p>
+                            </td>
+                            <td width="60">
+                                <p align="right">2014年11月03日</p>
+                            </td>
+                            <td width="31">
+                                <p align="right">
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
     </div>
     <?php } ?>
 </body>

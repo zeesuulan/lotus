@@ -17,6 +17,10 @@
     	<form class="form" action="upload/getFile" method="post" enctype="multipart/form-data">
     		<label>根据上传的年级，选择不同的表！！！（重要）</label>
     		<select name="level" class="form-control" style="width:20%;margin: 10px 0;">
+                <option value="1">一年级表</option>
+                <option value="2">二年级表</option>
+                <option value="3">三年级表</option>
+                <option value="4">四年级表</option>
     			<option value="5">五年级表</option>
     			<option value="6">六年级表</option>
     		</select>

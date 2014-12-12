@@ -26,7 +26,10 @@ p{
 .w3cbbs {
     page-break-after: always;
     height: 100%;
-    padding: 1cm 0;
+    padding: .5cm 0;
+}
+h3{
+    color: black;
 }
 @page: pseudo-class {
     size: A4 landscape;
